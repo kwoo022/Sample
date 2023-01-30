@@ -1,0 +1,25 @@
+@charset "utf-8";
+/**
+ * @File Name : layout.css
+ * @Description : 메인 + 서브 공용 레이아웃
+ * @Modification Information
+ * <pre>
+ * 수정일 | 수정자 | 수정내용
+ * 2022.02.22 | UX/UI | 최초 등록
+ * </pre>
+ * @author UX/UI
+ * @since 2022.09.14
+ *
+ * @Copyright (C) TWOGOMS All rights reserved.
+ */
+
+body{background:#fff;color:#666;font-weight:400;font-size:0.813em;line-height:1.75;letter-spacing:-.03125em;}
+
+html,
+body,
+#container, #wrap, #body{min-height:100%;}
+
+.container{position:relative;min-width:280px; margin:0 20px; }
+
+#container{position:relative;overflow-x:hidden;}
+

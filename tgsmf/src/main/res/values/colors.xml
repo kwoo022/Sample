@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="trans">#00000000</color>
+
+    <color name="login_text">#878f9b</color>
+    <color name="login_input_text">#1b2b55</color>
+    <color name="login_line_text">#dadfe8</color>
+
+    <!-- 사이드메뉴 -->
+    <color name="tgsfw_side_menu_step1_off_text">#323132</color>
+    <color name="tgsfw_side_menu_step1_on_text">#3f67e9</color>
+    <color name="tgsfw_side_menu_step2_off_text">#717885</color>
+    <color name="tgsfw_side_menu_step2_on_text">#25a6d7</color>
+    <color name="tgsfw_side_menu_step2_bg">#f3f4f7</color>
+    <color name="tgsfw_side_menu_step3_off_text">#717885</color>
+    <color name="tgsfw_side_menu_step3_on_text">#ed5554</color>
+    <color name="tgsfw_side_menu_step3_bg">#ffffff</color>
+
+    <!-- 타이틀 바 -->
+    <color name="tgsfw_title_bar_bg">#FFFFFF</color>
+    <color name="tgsfw_title_bar_text">#151515</color>
+    <color name="tgsfw_title_bar_line">#eaeaea</color>
+
+    <!-- 설정화면 -->
+    <color name="tgsfw_setting_title_text">#303030</color>
+    <color name="tgsfw_setting_time_text">#ed5554</color>
+    <color name="tgsfw_setting_toggle_on_bg">#3dc172</color>
+    <color name="tgsfw_setting_toggle_off_bg">#cbcfd4</color>
+    <color name="tgsfw_setting_line">#f3f4f7</color>
+
+    <!-- 알람함 -->
+    <color name="tgsfw_push_list_item_line">#f3f4f7</color>
+    <color name="tgsfw_push_list_item_parent_title_text">#303030</color>
+    <color name="tgsfw_push_list_item_child_message_text">#717885</color>
+    <color name="tgsfw_push_list_item_child_message_bg">#f5f6f8</color>
+
+    <!-- QR 코드 스캔 -->
+    <color name="tgsfw_qr_scan_msg01_text">#111111</color>
+    <color name="tgsfw_qr_scan_msg02_text">#5f6268</color>
+
+
+    <!-- OTP 다이얼로그 -->
+    <color name="tgsfw_otp_dialog_title_text">#111111</color>
+    <color name="tgsfw_otp_dialog_guide_text">#5f6268</color>
+    <color name="tgsfw_otp_dialog_number_text">#33b384</color>
+    <color name="tgsfw_otp_dialog_limit_time_text">#ed5554</color>
+
+    <!-- Picture Upload 다이얼로그 -->
+    <color name="tgsfw_picture_upload_dialog_title_text">#111111</color>
+    <color name="tgsfw_picture_upload_dialog_guide_text">#5f6268</color>
+    <color name="tgsfw_picture_upload_dialog_line">#edebeb</color>
+
+
+    <!-- 다이얼로그 -->
+    <color name="tgsfw_alert_dialog_title_text">#111111</color>
+    <color name="tgsfw_alert_dialog_message_text">#5f6268</color>
+    <color name="tgsfw_alert_dialog_button_text">#FFFFFF</color>
+
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+
+    <color name="colorAccent">#FF018786</color>
+
+
+
+    <color name="gray_01">#e5e9ed</color>
+    <color name="gray_02">#c1c1c1</color>
+    <color name="gray_03">#afb6c2</color>
+    <color name="gray_04">#8995a6</color>
+    <color name="dark_gray_01">#444</color>
+
+    <color name="splash_bg">#554ee4</color>
+
+    <color name="title_bar_bg">#3a69c1</color>
+    <color name="side_menu_group_bg">#6592d7</color>
+    <color name="side_menu_item_divider">#6dbaec</color>
+
+
+
+
+</resources>

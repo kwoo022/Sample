@@ -1,0 +1,40 @@
+@charset "utf-8";
+/**
+ * @File Name : font.css
+ * @Description : 폰트 정의
+ * @Modification Information
+ * <pre>
+ * 수정일 | 수정자 | 수정내용
+ * 2022.02.22 | UX/UI | 최초 등록
+ * </pre>
+ * @author UX/UI
+ * @since 2022.09.14
+ *
+ * @Copyright (C) TWOGOMS All rights reserved.
+ */
+
+/* 본고딕 : 구글폰트 */
+@font-face {font-family: 'Noto Sans KR';font-weight: 100;src: local('Noto Sans KR Thin'),local('NotoSansKR-Thin'),url(../../assets/font/NotoSans/100.woff2) format('woff2'),url(../../assets/font/NotoSans/100.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR';font-weight: 300;src: local('Noto Sans KR Light'),local('NotoSansKR-Light'),url(../../assets/font/NotoSans/300.woff2) format('woff2'),url(../../assets/font/NotoSans/300.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR';font-weight: 400;src: local('Noto Sans KR Regular'),local('NotoSansKR-Regular'),url(../../assets/font/NotoSans/400.woff2) format('woff2'),url(../../assets/font/NotoSans/400.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR';font-weight: 500;src: local('Noto Sans KR Medium'),local('NotoSansKR-Medium'),url(../../assets/font/NotoSans/500.woff2) format('woff2'),url(../../assets/font/NotoSans/500.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR';font-weight: 700;src: local('Noto Sans KR Bold'),local('NotoSansKR-Bold'),url(../../assets/font/NotoSans/700.woff2) format('woff2'),url(../../assets/font/NotoSans/700.woff) format('woff');}
+@font-face {font-family: 'Noto Sans KR';font-weight: 900;src: local('Noto Sans KR Black'),local('NotoSansKR-Black'),url(../../assets/font/NotoSans/900.woff2) format('woff2'),url(../../assets/font/NotoSans/900.woff) format('woff');}
+
+/* G마켓 */
+@font-face { font-family: 'Gmarket Sans'; font-style: normal; font-weight: 700; src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'), url('../../assets/font/GmarketSans/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../../assets/font/GmarketSans/GmarketSansBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */}
+@font-face { font-family: 'Gmarket Sans'; font-style: normal; font-weight: 500; src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'), url('../../assets/font/GmarketSans/GmarketSansMedium.woff2') format('woff2'), url('../../assets/font/GmarketSans/GmarketSansMedium.woff') format('woff'); }
+@font-face { font-family: 'Gmarket Sans'; font-style: normal; font-weight: 300;	src: local('Gmarket Sans Light'), local('GmarketSans-Light'), url('../../assets/font/GmarketSans/GmarketSansLight.woff2') format('woff2'), url('../../assets/font/GmarketSans/GmarketSansLight.woff') format('woff'); }
+
+
+[lang|='ko'],
+[lang|='ko']>*{
+	font-family:
+		'Apple SD Gothic Neo',
+		'Open Sans',OpenSans,
+		'Meiryo',
+		'Noto Sans CJK KR','Noto Sans KR','본고딕',NotoSans,'Noto Sans',
+		'돋움',Dotum,
+		Helvetica,'Helvetica Neue',
+		Arial,sans-serif;
+}

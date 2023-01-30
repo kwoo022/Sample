@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TGSSettingFragment"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/tgs_title_bar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/tgs_button_setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:includeFontPadding="false"
+        android:text="@string/setting_fragment_logout"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_rect_blue_none"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_title_bar"
+        app:layout_constraintBottom_toTopOf="@id/tgs_button_setting_logout">
+        <LinearLayout
+            android:id="@+id/tgs_layout_setting_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/tgs_image_setting_push_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_ic1"
+                    app:layout_constraintTop_toTopOf="@id/tgs_layout_setting_push_title"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <LinearLayout
+                    android:id="@+id/tgs_layout_setting_push_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toRightOf="@id/tgs_image_setting_push_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+                    <TextView
+                        android:id="@+id/tgs_textview_setting_push_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/setting_fragment_push_title"
+                        android:textSize="14sp"
+                        android:textColor="@color/tgsfw_setting_title_text"/>
+                    <TextView
+                        android:id="@+id/tgs_textview_setting_push_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/setting_fragment_push_time"
+                        android:textSize="13sp"
+                        android:textColor="@color/tgsfw_setting_time_text"/>
+                </LinearLayout>
+
+                <com.android.tgsmf.view.toggleswitch.TGSToggleSwitch
+                    android:id="@+id/tgs_switch_setting_push"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    app:on="true"
+                    app:textOn=""
+                    app:textOff=""
+                    app:colorOff = "@color/tgsfw_setting_toggle_off_bg"
+                    app:colorOn = "@color/tgsfw_setting_toggle_on_bg"
+                    app:thumbColorOn = "@color/white"
+                    app:thumbColorOff = "@color/white"
+                    app:colorBorder="@color/white"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/tgsfw_setting_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tgs_layout_setting_save_accrount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+                <ImageView
+                    android:id="@+id/tgs_image_setting_save_accrount_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_ic2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                <TextView
+                    android:id="@+id/tgs_textview_setting_save_accrount_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/setting_fragment_save_account_title"
+                    android:textSize="14sp"
+                    android:textColor="@color/tgsfw_setting_title_text"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toRightOf="@id/tgs_image_setting_save_accrount_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+                <com.android.tgsmf.view.toggleswitch.TGSToggleSwitch
+                    android:id="@+id/tgs_switch_setting_save_account"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    app:on="true"
+                    app:textOn=""
+                    app:textOff=""
+                    app:colorOff = "@color/tgsfw_setting_toggle_off_bg"
+                    app:colorOn = "@color/tgsfw_setting_toggle_on_bg"
+                    app:thumbColorOn = "@color/white"
+                    app:thumbColorOff = "@color/white"
+                    app:colorBorder="@color/white"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/tgsfw_setting_line"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

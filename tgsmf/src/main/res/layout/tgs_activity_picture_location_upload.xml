@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:background="@drawable/hround_rect_white_none_3">
+        <TextView
+            android:id="@+id/tgs_textview_picture_upload_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/picture_upload_dialog_title"
+            android:textSize="17dp"
+            android:textColor="@color/tgsfw_picture_upload_dialog_title_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/tgs_textview_picture_upload_dialog_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/picture_upload_dialog_guide"
+            android:textSize="13sp"
+            android:textColor="@color/tgsfw_picture_upload_dialog_guide_text"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tgs_textview_picture_upload_dialog_title"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <ImageButton
+            android:id="@+id/tgs_button_upload_picture_dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_close1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/tgs_layout_upload_picture_dialog_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/tgs_textview_picture_upload_dialog_guide">
+            <ImageButton
+                android:id="@+id/tgs_button_upload_picture_dialog_camera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_camera1"
+                android:background="@drawable/hround_rect_white_gray"/>
+            <ImageButton
+                android:id="@+id/tgs_button_upload_picture_dialog_gallery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_picture1"
+                android:background="@drawable/hround_rect_white_gray1"/>
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tgs_listview_upload_picture_dialog_picture"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/round_rect_gray_none"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="12dp"
+
+            app:layout_constraintTop_toBottomOf="@id/tgs_layout_upload_picture_dialog_buttons"/>
+
+        <LinearLayout
+            android:id="@+id/tgs_layout_upload_picture_dialog_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="22dp"
+            app:layout_constraintTop_toBottomOf="@id/tgs_listview_upload_picture_dialog_picture">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/tgsfw_picture_upload_dialog_line"/>
+            <CheckBox
+                android:id="@+id/tgs_checkbox_upload_picture_dialog_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox_green_circle"
+                android:checked="true"
+                android:layout_marginTop="22dp"
+                android:paddingLeft="10dp"
+                android:includeFontPadding="false"
+                android:text="@string/picture_upload_dialog_loc_title"
+                android:textSize="14sp"
+                android:textColor="@color/tgsfw_picture_upload_dialog_title_text"/>
+            <TextView
+                android:id="@+id/tgs_textview_picture_upload_dialog_location_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/picture_upload_dialog_loc_guide"
+                android:textSize="13sp"
+                android:textColor="@color/tgsfw_picture_upload_dialog_guide_text"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tgs_button_upload_picture_dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/dialog_button_ok"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_rect_blue_none"
+            android:layout_marginTop="23dp"
+            app:layout_constraintTop_toBottomOf="@id/tgs_layout_upload_picture_dialog_location"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

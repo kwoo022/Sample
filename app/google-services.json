@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "456833513796",
+    "project_id": "tgsfw-4762f",
+    "storage_bucket": "tgsfw-4762f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456833513796:android:6b579f8327e46a4a36bf11",
+        "android_client_info": {
+          "package_name": "com.android.mobilefw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456833513796-p0q52ludgl0sq89l19snive5vskclui5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokBAC5T6B-m24V0IfPwfb2OxHTA4T7s8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456833513796-p0q52ludgl0sq89l19snive5vskclui5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "456833513796-hoomosqodv8kr3658mn71jq5k63juad8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.twogoms.tgsmf-example"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456833513796:android:336f6a83189cdba436bf11",
+        "android_client_info": {
+          "package_name": "com.android.tgsmf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456833513796-p0q52ludgl0sq89l19snive5vskclui5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokBAC5T6B-m24V0IfPwfb2OxHTA4T7s8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456833513796-p0q52ludgl0sq89l19snive5vskclui5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "456833513796-hoomosqodv8kr3658mn71jq5k63juad8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.twogoms.tgsmf-example"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456833513796:android:ba228ad16bcbe90536bf11",
+        "android_client_info": {
+          "package_name": "com.example.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456833513796-p0q52ludgl0sq89l19snive5vskclui5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokBAC5T6B-m24V0IfPwfb2OxHTA4T7s8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456833513796-p0q52ludgl0sq89l19snive5vskclui5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "456833513796-hoomosqodv8kr3658mn71jq5k63juad8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.twogoms.tgsmf-example"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

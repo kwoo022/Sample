@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tgs_textview_list_item_push_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="21dp"
+        android:text="설명"
+        android:textSize="13dp"
+        android:textColor="@color/tgsfw_push_list_item_child_message_text"
+        android:background="@color/tgsfw_push_list_item_child_message_bg"/>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="author" content="IDINO" />
+    <meta name="keywords" content="IDINO" />
+    <meta name="description" content="IDINO 모바일 공통 프레임워크" />
+    <title>IDINO 모바일 공통 프레임워크</title>
+    <link rel="stylesheet" type="text/css" href="./assets/plugin/animate.min.css" />
+    <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/plugin/jquery.easing.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/lib.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/template.css" />
+    <script type="text/javascript" src="./assets/js/lib.js"></script>
+</head>
+<body id="main">
+
+<!-- #container -->
+<div id="container">
+    <!-- #body -->
+    <section id="body" class="init">
+
+        <!-- #main_body1 -->
+        <div id="main_body1"><div class="bg1"></div>
+            <div class="container">
+                <!-- id_card -->
+                <div class="id_card">
+                    <div class="wrap">
+                        <h2>모바일 학생증</h2>
+                        <div class="f1"><img src="file:///android_asset/assets/images/sample/sample1.jpg" alt="증명사진" /></div>
+                        <div class="tg1">
+                            <ul>
+                                <li>
+                                    <span class="t1">이름</span>
+                                    <span class="t2">이영희</span>
+                                </li>
+                                <li>
+                                    <span class="t1">소속</span>
+                                    <span class="t2">인문대학 국어국문학과</span>
+                                </li>
+                                <li>
+                                    <span class="t1">학번</span>
+                                    <span class="t2">2022123456</span>
+                                </li>
+                            </ul>
+                        </div>
+                         <a href="javascript:clickIdCard()" class="b1"><span class="t1">모바일 학생증 보기</span></a>
+                    </div>
+                </div>
+                <!-- /id_card -->
+            </div>
+        </div>
+        <!-- /#main_body1 -->
+
+        <!-- #main_body2 -->
+        <div id="main_body2">
+            <div class="container">
+                <ul class="banner1 clearfix">
+                    <li><a href="javascript:clickCheckAttendance();"><i class="ic1"></i><span class="t1">출석1체크</span></a></li>
+                    <li><a href="javascript:clickCheckOutside();"><i class="ic2"></i><span class="t1">현장방문</span></a></li>
+                    <li><a href="javascript:clickQRCheck();"><i class="ic3"></i><span class="t1">QR 출입인증</span></a></li>
+                    <li><a href="javascript:clickNotice();"><i class="ic4"></i><span class="t1">공지사항</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#main_body2 -->
+
+    </section>
+    <!-- /#body -->
+</div>
+<!-- #container -->
+
+<script>
+    function clickIdCard() {
+        TGSFW.onMessage("TGSFW_COMD://moveIdCard")
+    }
+    function clickCheckAttendance() {
+        TGSFW.onMessage("TGSFW_COMD://webClose?title=출석체크&url=file%3A%2F%2F%2Fandroid_asset%2Ftgs_attendance_web.html")
+    }
+    function clickCheckOutside() {
+        TGSFW.onMessage("TGSFW_COMD://webClose?url=file%3A%2F%2F%2Fandroid_asset%2Ftgs_check_outside_web.html&title=현장방문")
+    }
+    function clickQRCheck() {
+        TGSFW.onMessage("TGSFW_COMD://moveQRCheck?api=aaa")
+    }
+    function clickNotice() {
+        TGSFW.onMessage("TGSFW_COMD://webBack?url=file%3A%2F%2F%2Fandroid_asset%2Ftgs_main_notice.html&title=공지사항")
+    }
+</script>
+
+</body>
+</html>

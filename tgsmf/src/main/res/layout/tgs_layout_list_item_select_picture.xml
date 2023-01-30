@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingRight="2dp">
+
+    <ImageView
+        android:id="@+id/tgs_image_list_item_select_picture"
+        android:layout_width="75dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:background="@color/trans"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/tgs_button_list_item_select_picture_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/ic_delete1"
+        app:layout_constraintRight_toRightOf="@id/tgs_image_list_item_select_picture"
+        app:layout_constraintTop_toTopOf="@id/tgs_image_list_item_select_picture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
